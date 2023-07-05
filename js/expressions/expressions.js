@@ -1,10 +1,10 @@
 "use strict";
 
-if (4 == 9) {
-  console.log("ok!");
-} else {
-  console.log("error");
-}
+// if (4 == 9) {
+//   console.log("ok!");
+// } else {
+//   console.log("error");
+// }
 
 const num = 50;
 
