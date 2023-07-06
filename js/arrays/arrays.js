@@ -40,3 +40,32 @@ a.forEach(function (item, i, a) {
 // const products = str.split(", ");
 // products.sort();
 // console.log(products.join("; "));
+
+// Копия массива
+// если записать вот так, то в newArray запишется просто ссылка
+const oldArray = ["a", "b", "c"];
+// const newArray = oldArray;
+// Чтобы сделать копию нужно записать через метод slice(), который позволяет просто скопировать старый массив. В него еще можно передать аргументы по кол-ву этих элементов
+const newArray = oldArray.slice();
+
+newArray[1] = "abrakadabra";
+
+console.log(newArray);
+console.log(oldArray);
+
+// ////////////////////////////////////
+// spread
+const video = ["youtube", "vimeo", "netflix"],
+  blogs = ["wordpress", "livejournal", "blogger"],
+  internet = [...video, ...blogs, "fb", "instagramm"];
+
+console.log(internet);
+
+function log(a, b, c) {
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+const num = [2, 5, 7];
+
+log(...num);
