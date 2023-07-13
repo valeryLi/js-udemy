@@ -37,7 +37,7 @@ function rememberMyFilms() {
   }
 }
 
-// rememberMyFilms();
+rememberMyFilms();
 
 function detectPersonalLevel() {
   if (personalMovieDB.count < 10) {
@@ -51,7 +51,7 @@ function detectPersonalLevel() {
   }
 }
 
-// detectPersonalLevel();
+detectPersonalLevel();
 
 // 2) Создать функцию showMyDB, которая будет проверять свойство privat. Если стоит в позиции
 // false - выводит в консоль главный объект программы

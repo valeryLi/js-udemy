@@ -22,3 +22,59 @@ function saleHotdogs(n) {
   }
 }
 console.log(saleHotdogs(10));
+
+//Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+function greet(name, owner) {
+  if (name === owner) {
+    return "Hello boss";
+  } else {
+    return "Hello guest";
+  }
+  // return name === owner ? 'Hello boss' : 	'Hello guest';
+}
+console.log(greet("Daniel", "Daniel"));
+console.log(greet("Greg", "Daniel"));
+
+// You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+// If it is a square, return its area. If it is a rectangle, return its perimeter.
+const areaOrPerimeter = function (l, w) {
+  if (l === w) {
+    return l * w;
+  }
+  return (l + w) * 2;
+  // return l == w ? l*w : 2*(l + w)
+};
+
+console.log(areaOrPerimeter(3, 3));
+console.log(areaOrPerimeter(6, 10));
+
+// Code as fast as you can! You need to double the integer and return it.
+function doubleInteger(i) {
+  if (typeof i === "number") {
+    return i * 2;
+  }
+}
+console.log(doubleInteger(2));
+
+// Your task is to create a function that does four basic mathematical operations.
+
+// The function should take three arguments - operation(string/char), value1(number), value2(number).
+// The function should return result of numbers after applying the chosen operation.
+function basicOp(operation, value1, value2) {
+  switch (operation) {
+    case "+":
+      return value1 + value2;
+    case "-":
+      return value1 - value2;
+    case "*":
+      return value1 * value2;
+    case "/":
+      return value1 / value2;
+    default:
+      return null;
+  }
+}
+console.log(basicOp(("+", 4, 7)));
+console.log(basicOp(("-", 15, 18)));
+console.log(basicOp(("*", 5, 5)));
+console.log(basicOp(("/", 49, 7)));
