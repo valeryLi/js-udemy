@@ -17,3 +17,5 @@ const ending = 'world';
 console.log(str.endsWith(ending)); // true
 
 In this code, we define two variables: str and ending. We then use the endsWith() method to determine whether the string str ends with the string ending, and log the result to the console.
+
+Метод slice() примененный на строке извлекает часть строки и возвращает новую строку без изменения оригинальной строки.
