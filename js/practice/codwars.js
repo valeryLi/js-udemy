@@ -174,3 +174,65 @@ function rentalCarCost(d) {
   //  return d * 40 - (d >= 7 ? 50 : (d >= 3 ? 20 : 0));
 }
 console.log(rentalCarCost(10));
+
+function setAlarm(employed, vacation) {
+  if (employed === true && vacation === true) {
+    return false;
+  } else if (employed === true && vacation === false) {
+    return true;
+  } else if (employed === false && vacation === true) {
+    return false;
+  } else {
+    return false;
+  }
+  //  return (employed && !vacation) ? true : false;
+}
+
+console.log(setAlarm(true, true));
+console.log(setAlarm(false, true));
+console.log(setAlarm(true, false));
+
+// function setAlarm(employed, vacation){
+// employed is a boolean (true/false)
+// vacation is a boolean (true/false)
+// if you are employed and not on vacation
+// if(employed && !vacation){
+//   The function should return true if you are employed and not on vacation :  need to set an alarm
+//   return true;
+//} else {
+//   It should return false otherwise
+// return false;
+// }
+//}
+
+function areYouPlayingBanjo(name) {
+  if (name[0] === "R" || name[0] === "r") {
+    return `${name} plays banjo`;
+  } else {
+    return `${name} does not play banjo`;
+  }
+  //  return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+}
+
+// console.log(areYouPlayingBanjo("Rayan"));
+// console.log(areYouPlayingBanjo("robert"));
+// console.log(areYouPlayingBanjo("Adam"));
+
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number * 8 : number * 9;
+  // if (number % 2 === 0) {
+  //   return number * 8;
+  // } else {
+  //   return number * 9;
+  // }
+}
+
+// console.log(simpleMultiplication(2));
+// console.log(simpleMultiplication(1));
+// console.log(simpleMultiplication(8));
+// console.log(simpleMultiplication(4));
+// console.log(simpleMultiplication(5));
+
+function hero(bullets, dragons) {
+  //Get Coding!
+}
