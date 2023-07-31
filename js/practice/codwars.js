@@ -234,5 +234,24 @@ function simpleMultiplication(number) {
 // console.log(simpleMultiplication(5));
 
 function hero(bullets, dragons) {
-  //Get Coding!
+  return bullets / 2 >= dragons ? true : false;
+  // if (bullets / 2 >= dragons) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
 }
+
+// console.log(hero(10, 5));
+// console.log(hero(7, 4));
+// console.log(hero(4, 5));
+// console.log(hero(100, 40));
+
+function removeChar(str) {
+  return str.slice(1, str.length - 1);
+
+  //  return str.slice(1, -1);
+}
+
+console.log(removeChar("person"));
+console.log(removeChar("country"));
